@@ -1,0 +1,245 @@
+:root {
+    --cute-color: linear-gradient(90deg, #c60b0D, #ff0f11);
+    --cute-clr: linear-gradient(180deg, #c60b0D, #ff0f11);
+    --abid: 33px;
+    --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
+}
+
+@font-face {font-family: f1; src: url(../abid__fontS/LiIhtishamDeshlipiUnicode-Regular.ttf);}
+@font-face {font-family: f2; src: url(../abid__fontS/Fedra_Sans_Bangla_Book.ttf);}
+@font-face {font-family: f3; src: url(../abid__fontS/MyriadPro-Regular.ttf);
+} /* for footer terms*/
+@font-face {font-family: abid; src: url(../abid__fontS/AbidFont.ttf);}
+
+@font-face {font-family: outfit; src: url(../abid__fontS/Outfit-Regular.ttf);}
+@font-face {font-family: wingdings3; src: url(../abid__fontS/Wingdings\ 3.ttf);}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    transition: var(--fbc-transition);
+}
+
+header {
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    font-family: f1;
+    color: white;
+    font-size: var(--abid);
+    border: 2.3px dotted black;
+    border-radius: 85px;
+    text-align: center;
+    box-shadow: 0px 7.5px 15px 0px #e81212;
+}
+
+.pftext1 sup {
+    color: white;
+    background-image: var(--cute-clr); opacity: 89%;
+    border-radius: 2rem;
+    font-family: f3;
+    padding: 0 2px 2px 2px;
+}
+.prefon:hover .pftext1 sup {
+    color: #cc0000;
+    background-image: none;
+    background-color: white;
+}
+
+.abid-full {
+    background-image: var(--cute-color);
+    border-radius: 85px;
+
+}
+.abid-a {
+    font-size: calc(var(--abid) + 3.5px);
+    color: #c60b0D;
+    background-color: white;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.pftext1 , .pftext2 {
+    font-family: f2;
+}
+
+.pftext1 {
+    color: #cc0000;
+    font-weight: bold;
+}
+.pftext2 {
+    color: black;
+}
+
+.footer__text, #chToMyRights {
+    font-family: f2;
+    font weight: bold;
+    font-size: 17px;
+    color: #c60b0D;
+}
+
+.footer__text span { /*footer bn letter A*/
+    font-family: abid;
+    font-size: 27px;
+}
+.footer__text span a {
+    color: #c60b0D;
+}
+
+.prefon {
+    background: #e6e7e8;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-image: url("../abid__imgS/abid__dnLogo.jpg");
+    background-size: 249px;
+
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 5px;
+    padding-left: 111px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: 3px solid;
+    color: #ffffff;
+    display: inline-table;
+    box-shadow: 4px 4px 25px 0px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+
+.prefon:hover {
+    background: #cc0000;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-image: none;
+    /* background-image: url("../origin/logoa.jpg"); */
+    background-position: left;
+    background-repeat: no-repeat;
+    /* color: #ffffff; */
+    /* padding: 10px;
+    padding-left: 25px; */ /*defoult*/
+    padding: 15px 50px 15px 50px;
+}
+
+.prefon:hover .pftext1 {
+    color: #ffffff;
+    text-decoration: underline 1.9px dotted;
+}
+/* 
+.prefon:hover .pftext2::before {  //can be impliment
+    content: '🢒 ';
+    /* font-size: 21px; //suitable
+}
+*/
+
+.prefon:hover .pftext2 {
+    color: #ffffff;
+}
+
+.header:hover .abid-full {
+    background-image: var(--cute-clr);
+}
+
+.scroll {
+    padding-top: 23px;
+    overflow: scroll;
+    height: 69vh; /*501 px, 515px=69vh*/
+    border-bottom: 4.3px solid rgb(208, 28, 28);
+}
+
+
+@media only screen and (min-width: 900px) {   /*destop view*/
+    .pftext1 {
+        font-size: 27px;
+    }
+    .pftext2 {
+        font-size: 17px;
+    }
+    .footer__text {
+        font-size: 35px;
+    }
+    .abid-full {
+        font-size: 55px;
+    }
+
+    .header {
+        border-radius: 0px;
+    }
+    .abid-a {
+        font-size: 63px;
+    }
+    .prefon {
+        padding: 15px;
+        padding-left: 111px;
+    }
+    .header {
+        border-radius: 85px;
+    }
+    .footer__text, #chToMyRights {
+        font-size: 23px;
+    }
+
+/* #chToMyRights:hover {
+    font-size: 50px;
+} */
+
+    .footer__text span {
+        font-size: 43px;
+    }
+    .scroll {
+        border-bottom: 7px solid  rgb(208, 28, 28);
+        height: 73.1vh; /*497px*/
+    }
+    .footer__text span:hover {
+    font-size: 49.9px; /*footer bn A*/
+    transition: 0.79s ease;
+    }
+
+
+    .pftext1 sup {
+        font-size: 15px;
+    }
+
+    .sk-cube-grid {  /*the loading square*/
+        width: 7.1em;
+        height: 7.1em;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 391px)  {    /*mobile view*/
+    .prefon {
+        width: 319px;
+    }
+    .pftext1 {
+        font-size: 19.7px;
+    }
+    .pftext2 {
+        font-size: 14.3px;
+    }
+
+    .link sup {
+        font-size: 9.9px;
+    }
+
+    .sk-cube-grid {
+        width: 3.3em;
+        height: 3.3em;
+        margin: auto;
+    }
+}

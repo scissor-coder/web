@@ -1,0 +1,108 @@
+.loader {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  z-index: 10;
+
+  transition: opacity 0.75s, visibility 0.75s; /*loader out and web content coming*/
+}
+
+/* .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+} */
+
+.loader::after {
+  content: "";
+  /* width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: red;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+    animation: sk-cube-grid-scale-delay 0.75s ease infinite; */
+  transition: opacity 0.75s, visibility 0.75s;
+}
+/* @keyframes loading {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+} */
+
+/* ---------- */
+/* .sk-cube-grid {
+    width: 6em;
+    height: 6em;
+    margin: auto;
+  }       */
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #c60b0d;
+  float: left;
+  -webkit-animation: sk-cube-grid-scale-delay 1.3s infinite ease-in-out;
+  animation: sk-cube-grid-scale-delay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube-1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube-2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube-3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube-4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube-5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube-6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube-7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube-8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube-9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cube-grid-scale-delay {
+  0%,
+  70%,
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cube-grid-scale-delay {
+  0%,
+  70%,
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
