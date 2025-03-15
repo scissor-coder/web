@@ -5,14 +5,14 @@
     --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
 }
 
-@font-face {font-family: f1; src: url(../abid__fontS/LiIhtishamDeshlipiUnicode-Regular.ttf);}
-@font-face {font-family: f2; src: url(../abid__fontS/Fedra_Sans_Bangla_Book.ttf);}
-@font-face {font-family: f3; src: url(../abid__fontS/MyriadPro-Regular.ttf);
+@font-face {font-family: f1; src: url(/abid__fontS/LiIhtishamDeshlipiUnicode-Regular.ttf);}
+@font-face {font-family: f2; src: url(/abid__fontS/Fedra_Sans_Bangla_Book.ttf);}
+@font-face {font-family: f3; src: url(/abid__fontS/MyriadPro-Regular.ttf);
 } /* for footer terms*/
-@font-face {font-family: abid; src: url(../abid__fontS/AbidFont.ttf);}
+@font-face {font-family: abid; src: url(/abid__fontS/AbidFont.ttf);}
 
-@font-face {font-family: outfit; src: url(../abid__fontS/Outfit-Regular.ttf);}
-@font-face {font-family: wingdings3; src: url(../abid__fontS/Wingdings\ 3.ttf);}
+@font-face {font-family: outfit; src: url(/abid__fontS/Outfit-Regular.ttf);}
+@font-face {font-family: wingdings3; src: url(/abid__fontS/Wingdings_3.ttf);}
 
 * {
     margin: 0; padding: 0; box-sizing: border-box;
@@ -103,7 +103,7 @@ header {
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
-    background-image: url("../abid__imgS/abid__dnLogo.jpg");
+    background-image: url("/abid__imgS/abid__dnLogo.jpg");
     background-size: 249px;
 
     background-position: left;
